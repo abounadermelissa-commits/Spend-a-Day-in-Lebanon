@@ -6,5 +6,12 @@
   <li>HTML (hyper-text-markup-language)</li>
   <li>CSS(Cascading Style Sheets)</li>
   <li>JS (JavaScript)</li>
-  <li>Mon and Dad (for the songs choice)</li>
 </ul>
+<h2>How to Use it:</h2>
+<p>Using this entertaining site is very simple and straightforward. You simply click the button to start with the first city and can click the next button to dive into the next one. At the end, you can click a revisit button that is gong to reload the page to the start.</p>
+<h2>Credits</h2>
+<ul>
+  <li>Mon and Dad (for the songs choices)</li>
+  <li>Andrew my cousin (saw the website and gave a review)</li>
+  <li>Codebrave and Mr. Hazar (for teaching me the skills to code)</li>
+  </ul>
