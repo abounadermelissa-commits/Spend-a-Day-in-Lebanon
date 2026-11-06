@@ -1,0 +1,437 @@
+html::-webkit-scrollbar {
+    display: none;
+}
+#start {
+    display: block;
+    background: url("postcard-bright-v2.svg") center/ cover no-repeat;
+    height:46.45vw;
+    width: 100vw;
+    position: relative;
+}
+#start-btn {
+  padding: 18px 44px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  background: #e3202a;
+  border: 4px solid #ffffff;
+  border-radius: 999px;
+  box-shadow: 0 8px 0 #9e1119, 0 16px 26px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 32.52vw;
+  left: 35vw;
+  transition: transform 0.15s ease , box-shadow 0.15s ease;
+}
+#start-btn:hover {
+    transform: translateY(3px);
+    box-shadow:0 2px 0 #9e1119, 0 6px 16px rgba(0, 0, 0, 0.3) ;
+}
+#entering {
+display: none;
+background: url(lebanon-map.svg) center/ cover no-repeat;
+height:46.45vw;
+width: 100vw;
+animation: animation1 3s ease-in-out forwards;
+}
+@keyframes animation1 {
+    from {
+      transform:scale(1)
+    }
+    to {
+        transform:scale(10) translateX(100px) ;
+        opacity: 0%;
+    }
+}
+#beirut {
+background: url(beirut-background.svg) center/ cover no-repeat;
+position: absolute;
+top: 0vw;
+height:46.45vw;
+width: 100vw;
+display: none;
+}
+#bride-groom {
+    height: 13.94vw;
+    position:absolute;
+    top: 27.87vw;
+    left: 45vw;
+    transition: transform 0.15s ease-in-out, top 0.15s ease;
+    animation: animation2 10s linear forwards;
+}
+@keyframes animation2 {
+    from {
+        height:13.94vw;
+        top:27.87vw;
+        left: 45vw;
+    }
+    to {
+        height: 27.87vw;
+        top: 18.58vw;
+        left: 40vw;
+    }
+}
+#dancers-l {
+    height: 16.26vw;
+    position:absolute;
+    top: 27.87vw;
+    left: 10vw;
+    transition: height 0.30s ease;
+    animation: animation3 10s infinite;
+}
+@keyframes animation3 {
+    0% {
+    height: 16.26vw;
+    }
+    50% {
+        height:18.58vw;
+        left: 5vw;
+    }
+    100% {
+        height: 16.26vw;
+    }
+}
+#dancers-r {
+    height: 16.26vw;
+    position:absolute;
+    top:27.87vw ;
+    left: 65vw;
+    transition: transform 0.15s ease-in-out, top 0.15s ease;
+    animation: animation4 2s alternate infinite;
+}
+@keyframes animation4 {
+       from {
+        transform: rotate(-4deg);
+    }
+    to {
+        transform: rotate(5deg);
+    }
+}
+.name {
+  position: fixed;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding-bottom: 10px;
+  z-index: 3;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-color:#c4452d;
+  border-radius: 100px;
+  border: 2px solid #d4a017;
+  padding: 10px;
+}
+#next1 {
+position: fixed;
+  left: 55vw;
+  top: 1.63vw;
+  height: 50px;
+  width: 50px;
+  z-index: 4;
+  border: none;
+  background-color: transparent;
+  font-size: 50px;
+  color: #9e1119;
+  
+}
+#next1:hover {
+   transform: translateX(10px);
+}
+#tripoly {
+    position: absolute;
+    height:46.45vw;
+    width: 100vw;
+    background: url(tripoli-background.svg) center/ cover no-repeat;
+    display: none;
+}
+#kaak-seller {
+    height:16.26vw;
+    position:absolute;
+    top:24.15vw;
+    left: 75vw;
+}
+#next2 {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  z-index: 4;
+  border: none;
+  background-color: transparent;
+  font-size: 50px;
+  color: #9e1119;
+  left: 55vw;
+  top:1.63vw;
+}
+#next2:hover {
+   transform: translateX(10px);
+}
+#tripoly-girl {
+height: 16.26vw;
+position:absolute;
+top:27.87vw;
+left: 20vw;
+transition: 0.15 ease;
+animation: animation5 linear forwards 10s;
+z-index: 10;
+}
+@keyframes animation5 {
+    from{
+        height: 16.26vw;
+        left: 20vw;
+    }
+    to {
+       height: 18.58vw;
+       left: 70vw;
+       top:23.23vw ;
+    }
+}
+#friends {
+height:11.61vw;
+position:absolute;
+top: 27.87vw;
+left: 35vw;
+}
+#baalbek {
+display: none;
+width: 100vw;
+height: 46.45vw;
+background: url(baalbek-balcony-background.png) center/ cover no-repeat ;
+
+}
+#girl {
+height:20.90vw;
+position:absolute;
+top: 23.23vw;
+left: 10vw;
+transition: left 0.15s ease, transform 0.15s ease;
+animation: walk 3s forwards linear;
+}
+@keyframes walk {
+    from {
+        left: 10vw;
+        transform: rotate(5deg);
+    }
+    to {
+        left: 43vw;
+        transform: rotate(-5deg);
+    }
+    
+}
+#man {
+height: 18.58vw;
+position:absolute;
+top: 13.94vw;
+left: 85vw;
+z-index: 1;
+transition: top 0.15s ease, transform 0.15s ease;
+animation: down 3s forwards linear 5s;
+}
+@keyframes down {
+    from {
+        top: 13.94vw;
+        left: 85vw;
+        height: 18.58vw;
+    }
+    to {
+        top:50vh ;
+        left:50vw;
+        height:20.90vw;
+    }
+}
+#gossip {
+height:11.61vw;
+position:absolute;
+top: 0vw;
+left: 30vw;
+}
+#jealous {
+height: 18.58vw;
+position:absolute;
+top: 25.55vw;
+left: -10vw;
+transition: left 0.15s ease, transform 0.15s ease;
+animation: walk2 10s linear forwards;
+}
+@keyframes walk2 {
+    from {
+        left:-30vw;
+        transform: rotate(-20deg);
+    }
+    to {
+        left: 20vw;
+        transform: rotate(1deg);
+    }
+}
+#samia {
+height:9.29vw;
+position:absolute;
+top:2.32vw ;
+left: 10vw;
+}
+#many {
+height:6.97vw;
+position:absolute;
+top: 4.65vw;
+left: 55vw;  
+}
+
+#child {
+height:11.61vw ;
+position:absolute;
+top: 32.52vw;
+left: 100vw;
+transition: left 0.15s ease ;
+animation: come 5s 5s linear forwards;
+}
+@keyframes come {
+    from {
+        left: 100vw;
+    }
+    to {
+        left: 70vw;
+    }
+}
+
+
+#angry-mum {
+height: 16.26vw;
+position:absolute;
+top:27.87vw ;
+left: 120vw;
+animation: angry 5s 15s linear forwards;
+}
+@keyframes angry {
+    from {
+        left: 120vw;
+    }
+    to {
+        left:80vw;
+    }
+}
+#next3 {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  z-index: 4;
+  border: none;
+  background-color: transparent;
+  font-size: 50px;
+  color: #9e1119;
+  left: 55vw;
+  top:1.63vw;
+}
+#next3:hover {
+   transform: translateX(10px);
+}
+#jounieh {
+display: none;
+background: url(jounieh-vibrant.jpg) center / cover no-repeat;
+height: 46.45vw;
+width: 100vw;
+}
+#fam-walk {
+height:13.94vw;
+position:absolute;
+top:23.23vw;
+left: 5vw;
+transition: left 0.15s ease;
+animation: fam-walk-ani 30s  ease-in-out forwards;
+}
+@keyframes fam-walk-ani {
+    0% {
+        top:23.23vw;
+        left: 5vw;
+    
+    }
+    50% {
+        top: 32.52vw;
+        left: 45vw;
+    }
+    100% {
+        height:10.68vw;
+        top: 27.87vw;
+        left: 70vw;
+    }
+}
+#waiter {
+height: 11.61vw;
+position:absolute;
+top:25.55vw;
+left: 85vw;
+}
+#fairuz-img {
+opacity: 0%;
+height: 18.58vw;
+position:absolute;
+top: 25.55vw;
+left: 23vw;
+}
+#press {
+height:18.58vw ;
+position:absolute;
+top:25.55vw;
+left: 0vw;
+opacity: 0%;
+}
+#next4 {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  z-index: 4;
+  border: none;
+  background-color: transparent;
+  font-size: 50px;
+  color: #9e1119;
+  left: 55vw;
+  top: 1.63vw;
+}
+#next4:hover {
+   transform: translateX(10px);
+}
+#ending {
+    display: none;
+    background: url(curtains-opening.gif) center / cover no-repeat;
+    height:46.45vw;
+    width: 100vw;
+}
+#endBtn {
+  padding: 16px 44px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background-color: rgba(255, 217, 0, 0.767);
+  color: #5a1018;
+  border: 2px solid #a8761f;
+  box-shadow: #7c1b25 10px 10px 10px;
+  border-radius: 999px;
+  position: absolute;
+  left: 40vw;
+  top:32.52vw;
+}
+#endBtn:hover {
+    transform: translateY(3px);
+    box-shadow: #5a1018 2px 2px 2px;
+}
+
+#rotate {
+    width: 100vw;
+    height: 46.45vw;
+    background-color: aliceblue;
+    font-size: 3vw;
+    font-family: cursive;
+    text-align: center;
+    z-index: 1000;
+    position: absolute;
+    display: none;
+}
+@media (width<=1030px)and (orientation: portrait){  /*this is something that i've learned to acheive this project. and the rotate message.*/
+    #rotate{
+        display: block;
+    }
+   #scene {
+    display: none;
+   }
+}

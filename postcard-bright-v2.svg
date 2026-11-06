@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1fa8ff"/>
+      <stop offset="0.6" stop-color="#7fd6ff"/>
+      <stop offset="1" stop-color="#d4f3ff"/>
+    </linearGradient>
+    <linearGradient id="mtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2fb560"/>
+      <stop offset="1" stop-color="#14924a"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2fe0dc"/>
+      <stop offset="0.5" stop-color="#14a8d8"/>
+      <stop offset="1" stop-color="#0a69b0"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd878"/>
+      <stop offset="1" stop-color="#f2a23e"/>
+    </linearGradient>
+    <pattern id="win" width="22" height="30" patternUnits="userSpaceOnUse">
+      <path d="M5 25 V13 a6 6 0 0 1 12 0 V25 Z" fill="#0f9b4a"/>
+      <path d="M7.5 25 V13.5 a3.5 3.5 0 0 1 7 0 V25 Z" fill="#fff6c8"/>
+    </pattern>
+    <clipPath id="flagClip">
+      <path d="M0 0 C25 -8 50 8 100 0 L100 66 C50 74 25 58 0 66 Z"/>
+    </clipPath>
+    <g id="cloud" fill="#ffffff">
+      <ellipse cx="0" cy="22" rx="85" ry="20"/>
+      <circle cx="-32" cy="8" r="26"/>
+      <circle cx="8" cy="0" r="32"/>
+      <circle cx="48" cy="10" r="24"/>
+    </g>
+    <g id="bunting" stroke="#c9d4dc" stroke-width="1.5" stroke-linejoin="round">
+      <path d="M0 40 Q400 100 800 40" fill="none" stroke="#5a3b1e" stroke-width="3"/>
+      <path d="M10 45.7 L70 45.7 L40 105.7 Z" fill="#e3202a"/>
+      <path d="M90 55.3 L150 55.3 L120 115.3 Z" fill="#ffffff"/>
+      <path d="M170 62.5 L230 62.5 L200 122.5 Z" fill="#e3202a"/>
+      <path d="M250 67.3 L310 67.3 L280 127.3 Z" fill="#e3202a"/>
+      <path d="M330 69.7 L390 69.7 L360 129.7 Z" fill="#ffffff"/>
+      <path d="M410 69.7 L470 69.7 L440 129.7 Z" fill="#e3202a"/>
+      <path d="M490 67.3 L550 67.3 L520 127.3 Z" fill="#e3202a"/>
+      <path d="M570 62.5 L630 62.5 L600 122.5 Z" fill="#ffffff"/>
+      <path d="M650 55.3 L710 55.3 L680 115.3 Z" fill="#e3202a"/>
+      <path d="M730 45.7 L790 45.7 L760 105.7 Z" fill="#e3202a"/>
+    </g>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- Sun with rays -->
+  <g transform="translate(230 270)" stroke="#ffc928" stroke-width="9" stroke-linecap="round">
+    <line x1="0" y1="-88" x2="0" y2="-124"/>
+    <line x1="0" y1="-88" x2="0" y2="-124" transform="rotate(30)"/>
+    <line x1="0" y1="-88" x2="0" y2="-124" transform="rotate(60)"/>
+    <line x1="0" y1="-88" x2="0" y2="-124" transform="rotate(90)"/>
+    <line x1="0" y1="-88" x2="0" y2="-124" transform="rotate(120)"/>
+    <line x1="0" y1="-88" x2="0" y2="-124" transform="rotate(150)"/>
+    <line x1="0" y1="-88" x2="0" y2="-124" transform="rotate(180)"/>
+    <line x1="0" y1="-88" x2="0" y2="-124" transform="rotate(210)"/>
+    <line x1="0" y1="-88" x2="0" y2="-124" transform="rotate(240)"/>
+    <line x1="0" y1="-88" x2="0" y2="-124" transform="rotate(270)"/>
+    <line x1="0" y1="-88" x2="0" y2="-124" transform="rotate(300)"/>
+    <line x1="0" y1="-88" x2="0" y2="-124" transform="rotate(330)"/>
+  </g>
+  <circle cx="230" cy="270" r="68" fill="#ffe45c"/>
+  <circle cx="230" cy="270" r="68" fill="none" stroke="#ffb81f" stroke-width="5"/>
+
+  <!-- Clouds -->
+  <use href="#cloud" transform="translate(620 230)"/>
+  <use href="#cloud" transform="translate(980 330) scale(0.8)"/>
+  <use href="#cloud" transform="translate(1380 250) scale(0.9)"/>
+  <use href="#cloud" transform="translate(430 400) scale(0.6)" opacity="0.9"/>
+
+  <!-- Birds -->
+  <g fill="none" stroke="#1b3a5c" stroke-width="3" stroke-linecap="round">
+    <path d="M760 340 q11 -11 22 0 q11 -11 22 0"/>
+    <path d="M820 372 q9 -9 18 0 q9 -9 18 0"/>
+    <path d="M720 380 q8 -8 16 0 q8 -8 16 0"/>
+  </g>
+
+  <!-- Back mountains -->
+  <path d="M0 620 L0 470 L110 400 L210 450 L330 340 L470 460 L580 410 L700 500 L820 450 L960 360 L1100 450 L1230 380 L1360 450 L1480 370 L1600 440 L1600 620 Z" fill="url(#mtn)"/>
+  <g fill="#ffffff">
+    <path d="M110 400 L88 428 L102 424 L112 436 L124 422 L134 430 Z"/>
+    <path d="M330 340 L298 384 L316 378 L330 396 L346 376 L364 386 Z"/>
+    <path d="M960 360 L930 402 L948 396 L962 414 L978 394 L994 404 Z"/>
+    <path d="M1230 380 L1204 416 L1220 410 L1232 426 L1246 408 L1260 416 Z"/>
+    <path d="M1480 370 L1450 412 L1468 406 L1482 424 L1498 404 L1514 414 Z"/>
+  </g>
+  <!-- Front hills -->
+  <path d="M0 650 L0 565 C180 525 300 585 460 565 C620 545 760 595 900 570 C1060 545 1240 585 1400 560 C1500 550 1560 555 1600 552 L1600 650 Z" fill="#7ee06a"/>
+
+  <!-- Sea -->
+  <rect y="615" width="1600" height="285" fill="url(#sea)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.5">
+    <path d="M100 660 q20 -8 40 0 t40 0 t40 0"/>
+    <path d="M700 650 q20 -8 40 0 t40 0 t40 0"/>
+    <path d="M520 720 q22 -8 44 0 t44 0 t44 0"/>
+    <path d="M260 830 q25 -9 50 0 t50 0 t50 0"/>
+    <path d="M900 820 q25 -9 50 0 t50 0 t50 0"/>
+    <path d="M620 870 q25 -9 50 0 t50 0 t50 0"/>
+    <path d="M1040 700 q20 -8 40 0 t40 0"/>
+    <path d="M60 760 q22 -8 44 0 t44 0"/>
+  </g>
+
+  <!-- Rocks (Raouche) -->
+  <path d="M290 770 C285 670 310 590 360 575 C400 565 420 590 425 630 C432 680 440 730 455 770 Z" fill="#7b4a3a"/>
+  <path d="M400 575 C420 590 425 630 432 680 C438 720 445 745 455 770 L438 770 C430 730 420 680 412 640 C408 610 405 590 400 575 Z" fill="#ff9a5a"/>
+  <path d="M345 770 C345 720 390 720 395 770 Z" fill="#1498c8"/>
+  <path d="M500 775 C500 710 525 670 560 670 C595 675 605 730 610 775 Z" fill="#7b4a3a"/>
+  <path d="M560 670 C595 675 605 730 610 775 L592 775 C588 730 580 695 560 670 Z" fill="#ff9a5a"/>
+  <ellipse cx="372" cy="774" rx="115" ry="9" fill="#ffffff" opacity="0.85"/>
+  <ellipse cx="555" cy="779" rx="75" ry="7" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Boat in flag colors -->
+  <path d="M800 700 L880 700 L862 722 L818 722 Z" fill="#e3202a"/>
+  <rect x="800" y="705" width="80" height="5" fill="#ffffff" opacity="0.9"/>
+  <rect x="838" y="640" width="4" height="62" fill="#5a3b1e"/>
+  <path d="M844 698 L844 646 L888 698 Z" fill="#ffffff"/>
+  <path d="M836 698 L836 654 L798 698 Z" fill="#e3202a"/>
+
+  <!-- Coastal town -->
+  <g>
+    <rect x="1030" y="650" width="70" height="115" fill="#ffe08a"/>
+    <path d="M1024 650 L1065 614 L1106 650 Z" fill="#e3202a"/>
+    <rect x="1110" y="610" width="62" height="155" fill="#ff9f8a"/>
+    <rect x="1182" y="640" width="80" height="125" fill="#fff1d6"/>
+    <path d="M1176 640 L1222 604 L1268 640 Z" fill="#e3202a"/>
+    <rect x="1272" y="590" width="66" height="175" fill="#8fe8c4"/>
+    <rect x="1348" y="630" width="90" height="135" fill="#ffd0a0"/>
+    <path d="M1342 630 L1393 592 L1444 630 Z" fill="#e3202a"/>
+    <rect x="1448" y="600" width="70" height="165" fill="#ffe08a"/>
+    <rect x="1528" y="640" width="80" height="125" fill="#ff9f8a"/>
+    <path d="M1522 640 L1568 604 L1614 640 Z" fill="#e3202a"/>
+  </g>
+  <g fill="url(#win)">
+    <rect x="1030" y="660" width="70" height="100"/>
+    <rect x="1110" y="620" width="62" height="140"/>
+    <rect x="1182" y="650" width="80" height="110"/>
+    <rect x="1272" y="600" width="66" height="160"/>
+    <rect x="1348" y="640" width="90" height="120"/>
+    <rect x="1448" y="610" width="70" height="150"/>
+    <rect x="1528" y="650" width="80" height="110"/>
+  </g>
+  <!-- Rooftop details: water tanks -->
+  <rect x="1128" y="588" width="26" height="22" rx="4" fill="#44505c"/>
+  <rect x="1128" y="588" width="26" height="5" rx="2" fill="#6b7a88"/>
+  <rect x="1470" y="578" width="26" height="22" rx="4" fill="#44505c"/>
+  <rect x="1470" y="578" width="26" height="5" rx="2" fill="#6b7a88"/>
+  <!-- Laundry line in red, white, green -->
+  <g stroke="#5a3b1e" stroke-width="3" stroke-linecap="round">
+    <path d="M1277 590 V556"/>
+    <path d="M1334 590 V556"/>
+  </g>
+  <path d="M1277 558 Q1305 568 1334 558" fill="none" stroke="#5a3b1e" stroke-width="2"/>
+  <rect x="1284" y="562" width="10" height="16" fill="#e3202a"/>
+  <rect x="1300" y="565" width="10" height="16" fill="#ffffff" stroke="#c9d4dc" stroke-width="1"/>
+  <rect x="1316" y="562" width="10" height="16" fill="#e3202a"/>
+
+  <!-- Hillside land -->
+  <path d="M880 900 C920 820 960 770 1020 745 C1120 710 1320 690 1600 670 L1600 900 Z" fill="url(#land)"/>
+  <path d="M880 900 C920 820 960 770 1020 745" fill="none" stroke="#ffffff" stroke-width="6" opacity="0.8" stroke-linecap="round"/>
+  <g fill="#1fb355">
+    <ellipse cx="1180" cy="790" rx="48" ry="16"/>
+    <ellipse cx="1400" cy="770" rx="60" ry="17"/>
+    <ellipse cx="1540" cy="800" rx="50" ry="15"/>
+    <ellipse cx="1050" cy="800" rx="36" ry="12"/>
+  </g>
+  <!-- Poppies on the hillside -->
+  <g>
+    <g stroke="#0f8a45" stroke-width="3"><path d="M1200 830 v16"/><path d="M1240 850 v16"/><path d="M1300 815 v16"/><path d="M1360 855 v16"/><path d="M1430 825 v16"/><path d="M1500 860 v16"/><path d="M1130 840 v14"/></g>
+    <g fill="#e3202a">
+      <circle cx="1200" cy="828" r="9"/><circle cx="1240" cy="848" r="9"/><circle cx="1300" cy="813" r="9"/>
+      <circle cx="1360" cy="853" r="9"/><circle cx="1430" cy="823" r="9"/><circle cx="1500" cy="858" r="9"/><circle cx="1130" cy="838" r="8"/>
+    </g>
+    <g fill="#2a1a12">
+      <circle cx="1200" cy="828" r="3"/><circle cx="1240" cy="848" r="3"/><circle cx="1300" cy="813" r="3"/>
+      <circle cx="1360" cy="853" r="3"/><circle cx="1430" cy="823" r="3"/><circle cx="1500" cy="858" r="3"/><circle cx="1130" cy="838" r="3"/>
+    </g>
+  </g>
+
+  <!-- Flag pole + Lebanese flag -->
+  <line x1="960" y1="800" x2="960" y2="500" stroke="#5a3b1e" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="960" cy="496" r="7" fill="#ffc928"/>
+  <g transform="translate(962 508)">
+    <g clip-path="url(#flagClip)">
+      <rect x="0" y="-12" width="100" height="28.5" fill="#e3202a"/>
+      <rect x="0" y="16.5" width="100" height="33" fill="#ffffff"/>
+      <rect x="0" y="49.5" width="100" height="30" fill="#e3202a"/>
+      <rect x="48" y="40" width="4" height="10" fill="#5a3b1e"/>
+      <path d="M50 10 L40 25 L60 25 Z" fill="#0f9b4a"/>
+      <path d="M50 17 L36 34 L64 34 Z" fill="#12a04b"/>
+      <path d="M50 25 L32 43 L68 43 Z" fill="#0f9b4a"/>
+    </g>
+  </g>
+
+  <!-- Left cliff + big cedar -->
+  <path d="M0 900 L0 740 C90 730 190 780 250 900 Z" fill="#8a4f2a"/>
+  <path d="M0 740 C90 730 190 780 250 900" fill="none" stroke="#6fe05a" stroke-width="14" stroke-linecap="round"/>
+  <path d="M70 750 L74 590 L88 590 L92 750 Z" fill="#6b3f22"/>
+  <g fill="#0f9d48">
+    <ellipse cx="80" cy="595" rx="108" ry="21"/>
+    <ellipse cx="82" cy="555" rx="84" ry="19"/>
+    <ellipse cx="78" cy="520" rx="62" ry="16"/>
+    <ellipse cx="82" cy="490" rx="42" ry="14"/>
+    <ellipse cx="80" cy="468" rx="22" ry="10"/>
+  </g>
+  <g fill="#62e27c" opacity="0.85">
+    <ellipse cx="94" cy="587" rx="76" ry="8"/>
+    <ellipse cx="96" cy="548" rx="58" ry="7"/>
+    <ellipse cx="92" cy="513" rx="42" ry="6"/>
+    <ellipse cx="94" cy="484" rx="28" ry="5"/>
+  </g>
+  <!-- Poppies on the cliff -->
+  <g stroke="#0f8a45" stroke-width="3"><path d="M30 745 v16"/><path d="M110 752 v16"/><path d="M155 772 v16"/><path d="M195 805 v16"/></g>
+  <g fill="#e3202a"><circle cx="30" cy="743" r="9"/><circle cx="110" cy="750" r="9"/><circle cx="155" cy="770" r="9"/><circle cx="195" cy="803" r="9"/></g>
+  <g fill="#2a1a12"><circle cx="30" cy="743" r="3"/><circle cx="110" cy="750" r="3"/><circle cx="155" cy="770" r="3"/><circle cx="195" cy="803" r="3"/></g>
+
+  <!-- Festive bunting: red, white, green -->
+  <use href="#bunting"/>
+  <use href="#bunting" transform="translate(800 0)"/>
+</svg>

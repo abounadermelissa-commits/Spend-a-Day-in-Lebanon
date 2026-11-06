@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <clipPath id="leb">
+      <path d="M501 830 L541 742 L610 601 L646 504 L663 440 L711 362 L723 328 L731 260 L792 177 L844 85 L913 80 L1026 70 L1099 119 L1026 216 L1075 289 L1046 387 L1010 460 L913 508 L865 591 L816 669 L792 708 L711 752 L671 835 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Land -->
+  <rect width="1600" height="900" fill="#f3ecd9"/>
+
+  <!-- Sea -->
+  <path d="M0 0 L880 0 L844 85 L792 177 L731 260 L723 328 L711 362 L663 440 L646 504 L610 601 L541 742 L501 830 L470 900 L0 900 Z" fill="#bfe6f7"/>
+
+  <!-- Map grid -->
+  <g stroke="#ffffff" stroke-width="2" opacity="0.55">
+    <path d="M0 150 H1600 M0 300 H1600 M0 450 H1600 M0 600 H1600 M0 750 H1600"/>
+    <path d="M200 0 V900 M400 0 V900 M600 0 V900 M800 0 V900 M1000 0 V900 M1200 0 V900 M1400 0 V900"/>
+  </g>
+
+  <!-- Lebanon glow + fill -->
+  <path d="M501 830 L541 742 L610 601 L646 504 L663 440 L711 362 L723 328 L731 260 L792 177 L844 85 L913 80 L1026 70 L1099 119 L1026 216 L1075 289 L1046 387 L1010 460 L913 508 L865 591 L816 669 L792 708 L711 752 L671 835 Z" fill="#a8e68c" stroke="#ffffff" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M501 830 L541 742 L610 601 L646 504 L663 440 L711 362 L723 328 L731 260 L792 177 L844 85 L913 80 L1026 70 L1099 119 L1026 216 L1075 289 L1046 387 L1010 460 L913 508 L865 591 L816 669 L792 708 L711 752 L671 835 Z" fill="#a8e68c" stroke="#e3202a" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- Mountain ranges -->
+  <g clip-path="url(#leb)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M860 120 L901 245 L880 380 L830 480 L760 620 L700 760" stroke="#4fbf5a" stroke-width="70" opacity="0.55"/>
+    <path d="M1030 250 L990 380 L930 500 L860 620" stroke="#4fbf5a" stroke-width="44" opacity="0.4"/>
+    <path d="M860 120 L901 245 L880 380 L830 480 L760 620 L700 760" stroke="#2f9e44" stroke-width="22" opacity="0.5"/>
+  </g>
+
+  <!-- Roads -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M556 742 L622 601 L668 440 L729 328 L742 260 L798 177" stroke="#ffffff" stroke-width="14"/>
+    <path d="M556 742 L622 601 L668 440 L729 328 L742 260 L798 177" stroke="#ffb347" stroke-width="7"/>
+    <path d="M668 440 L824 460 L950 387" stroke="#ffffff" stroke-width="12"/>
+    <path d="M668 440 L824 460 L950 387" stroke="#ffd37a" stroke-width="6"/>
+    <path d="M798 177 L885 265" stroke="#ffffff" stroke-width="10"/>
+    <path d="M798 177 L885 265" stroke="#ffd37a" stroke-width="5"/>
+  </g>
+
+  <!-- Sea label -->
+  <text x="190" y="470" font-family="Georgia, serif" font-size="46" font-style="italic" fill="#5aa9cf" opacity="0.9">Mediterranean Sea</text>
+
+  <!-- Title -->
+  <g font-family="'Trebuchet MS', 'Segoe UI', Arial, sans-serif">
+    <text x="90" y="150" font-size="84" font-weight="800" fill="#e3202a" stroke="#ffffff" stroke-width="10" paint-order="stroke" letter-spacing="4">LEBANON</text>
+    <text x="90" y="225" font-size="64" font-weight="800" fill="#0f9d48" stroke="#ffffff" stroke-width="8" paint-order="stroke">لبنان</text>
+  </g>
+
+  <!-- City pins -->
+  <g id="pins">
+    <g transform="translate(798 177)">
+      <path d="M0 0 C-14 -20 -18 -30 -18 -38 a18 18 0 1 1 36 0 C18 -30 14 -20 0 0 Z" fill="#e3202a" stroke="#ffffff" stroke-width="3"/>
+      <circle cy="-38" r="7" fill="#ffffff"/>
+    </g>
+    <g transform="translate(885 265)">
+      <path d="M0 0 C-14 -20 -18 -30 -18 -38 a18 18 0 1 1 36 0 C18 -30 14 -20 0 0 Z" fill="#e3202a" stroke="#ffffff" stroke-width="3"/>
+      <circle cy="-38" r="7" fill="#ffffff"/>
+    </g>
+    <g transform="translate(729 328)">
+      <path d="M0 0 C-14 -20 -18 -30 -18 -38 a18 18 0 1 1 36 0 C18 -30 14 -20 0 0 Z" fill="#e3202a" stroke="#ffffff" stroke-width="3"/>
+      <circle cy="-38" r="7" fill="#ffffff"/>
+    </g>
+    <g transform="translate(950 387)">
+      <path d="M0 0 C-14 -20 -18 -30 -18 -38 a18 18 0 1 1 36 0 C18 -30 14 -20 0 0 Z" fill="#e3202a" stroke="#ffffff" stroke-width="3"/>
+      <circle cy="-38" r="7" fill="#ffffff"/>
+    </g>
+    <g transform="translate(668 440)">
+      <path d="M0 0 C-14 -20 -18 -30 -18 -38 a18 18 0 1 1 36 0 C18 -30 14 -20 0 0 Z" fill="#e3202a" stroke="#ffffff" stroke-width="3"/>
+      <circle cy="-38" r="7" fill="#ffffff"/>
+    </g>
+    <g transform="translate(824 460)">
+      <path d="M0 0 C-14 -20 -18 -30 -18 -38 a18 18 0 1 1 36 0 C18 -30 14 -20 0 0 Z" fill="#e3202a" stroke="#ffffff" stroke-width="3"/>
+      <circle cy="-38" r="7" fill="#ffffff"/>
+    </g>
+    <g transform="translate(622 601)">
+      <path d="M0 0 C-14 -20 -18 -30 -18 -38 a18 18 0 1 1 36 0 C18 -30 14 -20 0 0 Z" fill="#e3202a" stroke="#ffffff" stroke-width="3"/>
+      <circle cy="-38" r="7" fill="#ffffff"/>
+    </g>
+    <g transform="translate(556 742)">
+      <path d="M0 0 C-14 -20 -18 -30 -18 -38 a18 18 0 1 1 36 0 C18 -30 14 -20 0 0 Z" fill="#e3202a" stroke="#ffffff" stroke-width="3"/>
+      <circle cy="-38" r="7" fill="#ffffff"/>
+    </g>
+  </g>
+
+  <!-- City labels -->
+  <g font-family="'Trebuchet MS', 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800" fill="#1d3b2a" stroke="#ffffff" stroke-width="7" paint-order="stroke">
+    <text x="826" y="150">Tripoli</text>
+    <text x="911" y="240">The Cedars</text>
+    <text x="755" y="302">Byblos</text>
+    <text x="924" y="360" text-anchor="end">Baalbek</text>
+    <text x="694" y="414">Beirut</text>
+    <text x="850" y="496">Zahle</text>
+    <text x="648" y="576">Saida</text>
+    <text x="582" y="718">Tyre</text>
+  </g>
+</svg>
